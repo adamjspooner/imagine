@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p style="width: 350px; height: 262px; background: red; border: 2px solid black;">
+  <%= link_to image_tag(@item.image_url(:profile).to_s), "/items/#{@item.id}/full_size" %>
+</p>
+
+<h1><%= @item.title %></h1>
+
+<p><%= @item.description %></p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
