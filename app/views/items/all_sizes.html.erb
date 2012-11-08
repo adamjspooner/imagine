@@ -1,0 +1,17 @@
+<p><%= link_to 'Back', item_path(@item) %></p>
+
+<h1><%= @item.title %></h1>
+
+<h2>Thumbnail</h2>
+<p><%= image_tag @item.image_url(:thumbnail).to_s %></p>
+
+<h2>Dashboard</h2>
+<p><%= image_tag @item.image_url(:dashboard).to_s %></p>
+
+<h2>Profile</h2>
+<p><%= image_tag @item.image_url(:profile).to_s %></p>
+
+<h2>Original</h2>
+<p><%= image_tag @item.image_url.to_s %></p>
+
+<p><%= link_to 'Back', item_path(@item) %></p>

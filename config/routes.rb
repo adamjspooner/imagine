@@ -2,6 +2,7 @@ Imagine::Application.routes.draw do
   resources :items
 
   match ':items(/:id)(.:format)/full_size' => 'items#full_size'
+  match ':items(/:id)(.:format)/all_sizes' => 'items#all_sizes'
 
   root to: 'items#index'
 

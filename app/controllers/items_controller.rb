@@ -10,6 +10,15 @@ class ItemsController < ApplicationController
     end
   end
 
+  def all_sizes
+    @item = Item.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @item }
+    end
+  end
+
   def full_size
     @item = Item.find(params[:id])
 

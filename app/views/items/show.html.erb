@@ -9,5 +9,6 @@
 <p><%= @item.description %></p>
 
 
+<%= link_to 'All sizes', "/items/#{@item.id}/all_sizes" %> |
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
