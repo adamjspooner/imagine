@@ -26,5 +26,5 @@ jQuery ->
         progress = parseInt(data.loaded / data.total * 100, 10)
         data.context.find('.bar')
           .css('width', "#{progress}%")
-          .text("#{progress}%")
+          .text("#{progress}% (processing, please wait…)")
 
